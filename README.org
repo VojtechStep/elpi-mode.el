@@ -1,3 +1,28 @@
-TODO:
+* elpi-mode.el
+
+Major mode for editing [[https://github.com/LPCIC/elpi][elpi]] files.
+
+** Installation
+
+*** [[https://github.com/radian-software/straight.el][straight.el]] 
+
+E.g. with [[https://github.com/jwiegley/use-package][use-package]]
+#+begin_src emacs-lisp
+(use-package elpi-mode
+  :straight (:host github
+             :repo "VojtechStep/elpi-mode.el"))
+#+end_src
+
+*** [[https://github.com/doomemacs/doomemacs][Doom Emacs]]
+
+Note: I don't use Doom, so this is straight up from the [[https://github.com/doomemacs/doomemacs/blob/master/docs/getting_started.org#installing-packages-from-external-sources][docs]].
+
+#+begin_src emacs-lisp
+(package! elpi-mode :recipe
+  (:host github
+   :repo "VojtechStep/elpi-mode.el"))
+#+end_src
+
+** TODO
 - readme
 - tests? Whatever that means
